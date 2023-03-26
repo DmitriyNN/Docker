@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  postgresql:
+    image: postgres
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./data:/var/lib/postgres
+    environment:
+      - POSTGRES_DB=public
+      - POSTGRES_USER=private
+      - POSTGRES_PASSWORD=9mREsvXDs9Gk89Ef
